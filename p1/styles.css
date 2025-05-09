@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}
+
+li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px;
+}
