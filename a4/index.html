@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create a new account</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .logo {
+      font-size: 40px;
+      color: #1877f2;
+      font-weight: bold;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      width: 360px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    .subtext {
+      text-align: center;
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .name-fields {
+      display: flex;
+      gap: 10px;
+    }
+    .name-fields input {
+      flex: 1;
+    }
+    .gender-options {
+      display: flex;
+      justify-content: space-between;
+      margin: 6px 0;
+    }
+    .gender-options label {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .gender-options input {
+      display: none;
+    }
+    .gender-options input:checked + label {
+      border-color: #1877f2;
+      background-color: #e7f3ff;
+    }
+    .signup-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #42b72a;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .footer a {
+      color: #1877f2;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">facebook</div>
+  <div class="container">
+    <h2>Create a new account</h2>
+    <div class="subtext">It's quick and easy.</div>
+    <form>
+      <div class="name-fields">
+        <input type="text" placeholder="First name" required>
+        <input type="text" placeholder="Surname" required>
+      </div>
+      <label>Date of birth</label>
+      <div class="name-fields">
+        <select>
+          <option>9</option>
+          <!-- Add more options -->
+        </select>
+        <select>
+          <option>May</option>
+          <!-- Add more options -->
+        </select>
+        <select>
+          <option>2025</option>
+          <!-- Add more options -->
+        </select>
+      </div>
+      <label>Gender</label>
+      <div class="gender-options">
+        <input type="radio" id="female" name="gender" value="female" checked>
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="custom" name="gender" value="custom">
+        <label for="custom">Custom</label>
+      </div>
+      <input type="text" placeholder="Mobile number or email address" required>
+      <input type="password" placeholder="New password" required>
+      <button class="signup-btn">Sign Up</button>
+    </form>
+    <div class="footer">
+      <a href="#">Already have an account?</a>
+    </div>
+  </div>
+</body>
+</html>
