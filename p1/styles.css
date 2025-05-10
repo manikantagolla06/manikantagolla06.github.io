@@ -137,3 +137,36 @@ body {
 .demo-button:hover {
     background-color: #eee;
 }
+.info-box {
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.info-box ul {
+    padding-left: 20px;
+}
+
+#services, #about, #contact {
+    padding: 30px 20px;
+}
+#home {
+    background-color: #fff8e1; /* light yellow */
+}
+
+#services {
+    background-color: #e1f5fe; /* light blue */
+}
+
+#about {
+    background-color: #e8f5e9; /* light green */
+}
+
+#contact {
+    background-color: #fce4ec; /* light pink */
+}
