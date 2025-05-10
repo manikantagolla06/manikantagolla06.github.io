@@ -103,6 +103,7 @@ body {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    transition: transform: 0.5s;
 }
 
 .project-card {
