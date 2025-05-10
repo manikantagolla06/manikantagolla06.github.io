@@ -20,3 +20,64 @@ li {
     font-size: 20px;
     padding: 5px;
 }
+
+* {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}
+
+header li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.box {
+    width: 500px;
+    padding: 30px;
+}
+
+.btn-signup{
+    background-color: orange;
+    margin-top: 10px;
+    padding:7px;
+    font-size: 20px;
+    border-radius: 10px;
+    border:none;
+}
+
+.summary {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.image {
+    border-radius: 50px;
+}
+
+.title {
+    font-size: 30px;
+}
