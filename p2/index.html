@@ -1,80 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <title>Food Mart</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Food Mart</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="hehe.css" />
 </head>
 <body>
   <div class="container">
     <header>
       <div class="logo">
-        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" class="image" width="150px" alt="Food Mart Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Logo_Food_Mart.svg/512px-Logo_Food_Mart.svg.png" class="image" width="200px" alt="Food Mart Logo">
       </div>
       <div class="search">
-        <select>
-          <option>All Categories</option>
-          <option>Fruits</option>
-          <option>Vegetables</option>
-          <option>Dairy</option>
-          <option>Meat</option>
-          <option>Beverages</option>
-          <option>Snacks</option>
-        </select>
-        <input type="text" placeholder="Search for over 20,000 products">
-        <button><img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon"></button>
+        <div>
+          <p>
+            <select style="background-color: rgb(235, 235, 235); color: grey; border: 0px; font-size: 16px;">
+              <option style="color: grey; font-size: medium;">All Categories</option>
+              <option style="color: grey; font-size: medium;">Icecream</option>
+              <option style="color: grey; font-size: medium;">Bread</option>
+            </select>
+          </p>
+        </div>
+        <div>
+          <input type="text" style="background-color: rgb(238, 238, 238); border: 0px; width: 300px; font-size: medium;" placeholder="Search for more than 20,000 products">
+        </div>
+        <img src="https://cdn-icons-png.flaticon.com/512/482/482631.png" alt="Search" style="width: 30px; height: 30px;">
       </div>
-      <div class="support">
-        <p>Support?<br><strong>+999-999999999</strong></p>
+      <div>
+        <p style="margin: 0; font-size: 14px; color: gray;">For Support?<br>
+          <strong style="color: black;">+999-999999999</strong>
+        </p>
       </div>
-      <div class="profile">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="40" alt="Profile">
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Profile" width="30px">
       </div>
-      <div class="cart">
-        <select>
+      <div>
+        <select style="background-color: white; color: gray; border: 0px;">
           <option>Your Cart</option>
         </select>
-        <p>$999.00</p>
+        <strong style="color: black;">$1000.00</strong>
       </div>
     </header>
-  </div>
-  <main class="product-section">
-    <h2>Healthy Picks</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://cdn.pixabay.com/photo/2016/01/05/13/58/fruit-1122533_1280.jpg" alt="Fruit Bowl">
-        <h3>Fresh Fruit Bowl</h3>
-        <p>Mixed seasonal fruits — rich in vitamins and perfect for a fresh start.</p>
-        <div class="price-bar">
-          <span>$4.99</span>
-          <button>Add</button>
-        </div>
+
+    <div>
+      <select style="color: black; border: 0px; width: 230px; font-size: medium;">
+        <option>Shop by Departments</option>
+        <option>Bakery</option>
+        <option>Frozen Food</option>
+        <option>Packaged Food</option>
+      </select>
+    </div>
+
+    <div class="belowheader">
+      <div class="smoothie">
+        <img src="https://images.unsplash.com/photo-1585238342028-78c25f6e5c94" alt="Smoothie" width="750px">
+        <h1 class="natural">100% Natural</h1>
+        <p class="smo">Fresh Smoothie &<br> Summer Juice</p>
+        <button class="sn">Shop Now</button>
       </div>
-  
-      <div class="product-card">
-        <img src="https://cdn.pixabay.com/photo/2017/08/07/23/54/smoothie-2608712_1280.jpg" alt="Smoothie">
-        <h3>Berry Blast Smoothie</h3>
-        <p>A delicious blend of strawberries, blueberries, yogurt, and oats.</p>
-        <div class="price-bar">
-          <span>$3.99</span>
-          <button>Add</button>
+      <div class="rightcolumn">
+        <div class="veggies">
+          <img src="https://images.unsplash.com/photo-1606411724553-07182d21bb6c" width="450px" alt="Vegetables">
+          <h1 class="perc">20% Off</h1>
+          <h2 class="sale">--------SALE</h2>
+          <p class="fav">Fruits &<br> Vegetables</p>
+          <p class="sc">Shop Collection -></p>
         </div>
-      </div>
-  
-      <div class="product-card">
-        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/salad-1238245_1280.jpg" alt="Salad">
-        <h3>Avocado Green Salad</h3>
-        <p>Crisp greens, creamy avocado, cucumbers, cherry tomatoes & lemon dressing.</p>
-        <div class="price-bar">
-          <span>$5.49</span>
-          <button>Add</button>
+        <div class="baked">
+          <img src="https://images.unsplash.com/photo-1606756791212-6dc848b4ec88" width="450px" alt="Baked Goods">
+          <h1 class="perc2">15% Off</h1>
+          <h2 class="sale2">--------SALE</h2>
+          <p class="fav2">Baked<br>Products</p>
+          <p class="sc2">Shop Collection -></p>
         </div>
       </div>
     </div>
-  </main>
-  
-
+  </div>
 </body>
 </html>
