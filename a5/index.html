@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fa3600; /* PC - Green */
+    }
+
+
+    .title {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(11, 9, 9);
+      white-space: nowrap;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    /* Tablet */
+    @media (max-width: 1024px) and (min-width: 601px) {
+      body {
+        background-color: #101112; /* Tablet - Orange */
+      }
+
+      .title {
+        font-size: 2.2rem;
+      }
+      
+    }
+
+    /* Phone */
+    @media (max-width: 600px) {
+      body {
+        background-color: #5183c4; /* Phone - Indigo */
+      }
+
+      .title {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="title">MERN Stack Developer</div>
+</body>
+</html>
