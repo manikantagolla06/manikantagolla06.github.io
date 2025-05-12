@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form</title>
+  <style>
+    input, button {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      font-size: 16px;
+    }
+    hr {
+      margin: 20px 0;
+    }
+    #output {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="text" id="email" placeholder="Enter email">
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="submitForm()">Submit</button>
+
+  <hr>
+
+  <div id="output"></div>
+
+  <script>
+    function submitForm() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      document.getElementById('output').textContent = ${email}, ${password};
+    }
+  </script>
+
+</body>
+</html>
