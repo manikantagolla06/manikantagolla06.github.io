@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1606788075761-7f609e1fa26b');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    border-bottom: 2px solid rgb(248, 193, 70);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .search {
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px 15px;
+    gap: 10px;
+    height: 45px;
+  }
+  
+  .search select {
+    background-color: rgb(245, 245, 245);
+    color: rgb(120, 120, 120);
+    border: none;
+    font-size: 14px;
+    height: 30px;
+  }
+  
+  .search input {
+    background-color: rgb(245, 245, 245);
+    border: none;
+    width: 250px;
+    font-size: 14px;
+    height: 28px;
+  }
+  
+  .search img {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .smoothie {
+    position: relative;
+  }
+  
+  .natural {
+    position: absolute;
+    color: rgb(252, 252, 66);
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .smo {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87);
+    top: 60px;
+    left: 20px;
+  }
+  
+  .sn {
+    position: absolute;
+    top: 240px;
+    color: rgba(0, 0, 0, 0.8);
+    left: 20px;
+    width: 100px;
+    background-color: rgb(255, 255, 44);
+    border: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border-radius: 210px;
+  }
+  
