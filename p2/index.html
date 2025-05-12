@@ -1,81 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Food Mart</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="hehe.css" />
+    <title>Food Mart</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="st.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Logo_Food_Mart.svg/512px-Logo_Food_Mart.svg.png" class="image" width="200px" alt="Food Mart Logo">
-      </div>
-      <div class="search">
-        <div>
-          <p>
-            <select style="background-color: rgb(235, 235, 235); color: grey; border: 0px; font-size: 16px;">
-              <option style="color: grey; font-size: medium;">All Categories</option>
-              <option style="color: grey; font-size: medium;">Icecream</option>
-              <option style="color: grey; font-size: medium;">Bread</option>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="Food Mart Logo" />
+            </div>
+            <div class="search">
+                <select>
+                    <option>All Categories</option>
+                    <option>Icecream</option>
+                    <option>Bread</option>
+                </select>
+                <input type="text" placeholder="Search for more than 20,000 products">
+                <img src="img/search.png" alt="Search">
+            </div>
+            <div class="support">
+                <p>For Support?<br><strong>+999-999999999</strong></p>
+            </div>
+            <div class="profile">
+                <img src="img/profilelogo.png" alt="Profile" width="30">
+            </div>
+            <div class="cart">
+                <select>
+                    <option>Your Cart</option>
+                </select>
+                <strong>$1000.00</strong>
+            </div>
+        </header>
+
+        <div class="shop-dept">
+            <select>
+                <option>Shop by Departments</option>
+                <option>Bakery</option>
+                <option>Frozen Food</option>
+                <option>Packaged Food</option>
             </select>
-          </p>
         </div>
-        <div>
-          <input type="text" style="background-color: rgb(238, 238, 238); border: 0px; width: 300px; font-size: medium;" placeholder="Search for more than 20,000 products">
-        </div>
-        <img src="https://cdn-icons-png.flaticon.com/512/482/482631.png" alt="Search" style="width: 30px; height: 30px;">
-      </div>
-      <div>
-        <p style="margin: 0; font-size: 14px; color: gray;">For Support?<br>
-          <strong style="color: black;">+999-999999999</strong>
-        </p>
-      </div>
-      <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Profile" width="30px">
-      </div>
-      <div>
-        <select style="background-color: white; color: gray; border: 0px;">
-          <option>Your Cart</option>
-        </select>
-        <strong style="color: black;">$1000.00</strong>
-      </div>
-    </header>
 
-    <div>
-      <select style="color: black; border: 0px; width: 230px; font-size: medium;">
-        <option>Shop by Departments</option>
-        <option>Bakery</option>
-        <option>Frozen Food</option>
-        <option>Packaged Food</option>
-      </select>
-    </div>
+        <div class="belowheader">
+            <div class="smoothie">
+                <img src="https://source.unsplash.com/750x400/?smoothie" alt="Smoothie">
+                <h1 class="natural">100% Natural</h1>
+                <p class="smo">Fresh Smoothie &<br>Summer Juice</p>
+                <button class="sn">Shop Now</button>
+            </div>
 
-    <div class="belowheader">
-      <div class="smoothie">
-        <img src="https://images.unsplash.com/photo-1585238342028-78c25f6e5c94" alt="Smoothie" width="750px">
-        <h1 class="natural">100% Natural</h1>
-        <p class="smo">Fresh Smoothie &<br> Summer Juice</p>
-        <button class="sn">Shop Now</button>
-      </div>
-      <div class="rightcolumn">
-        <div class="veggies">
-          <img src="https://images.unsplash.com/photo-1606411724553-07182d21bb6c" width="450px" alt="Vegetables">
-          <h1 class="perc">20% Off</h1>
-          <h2 class="sale">--------SALE</h2>
-          <p class="fav">Fruits &<br> Vegetables</p>
-          <p class="sc">Shop Collection -></p>
+            <div class="rightcolumn">
+                <div class="veggies">
+                    <img src="https://source.unsplash.com/450x200/?vegetables" alt="Vegetables">
+                    <h1 class="perc">20% Off</h1>
+                    <h2 class="sale">--------SALE</h2>
+                    <p class="fav">Fruits &<br>Vegetables</p>
+                    <p class="sc">Shop Collection -></p>
+                </div>
+                <div class="baked">
+                    <img src="https://source.unsplash.com/450x200/?bakery" alt="Baked Goods">
+                    <h1 class="perc2">15% Off</h1>
+                    <h2 class="sale2">--------SALE</h2>
+                    <p class="fav2">Baked<br>Products</p>
+                    <p class="sc2">Shop Collection -></p>
+                </div>
+            </div>
         </div>
-        <div class="baked">
-          <img src="https://images.unsplash.com/photo-1606756791212-6dc848b4ec88" width="450px" alt="Baked Goods">
-          <h1 class="perc2">15% Off</h1>
-          <h2 class="sale2">--------SALE</h2>
-          <p class="fav2">Baked<br>Products</p>
-          <p class="sc2">Shop Collection -></p>
-        </div>
-      </div>
     </div>
-  </div>
 </body>
 </html>

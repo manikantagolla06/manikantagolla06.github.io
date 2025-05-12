@@ -1,17 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('https://images.unsplash.com/photo-1506617420156-8e4536971650'); /* Optional background */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    color: #000;
-    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    font-family: 'Rubik', sans-serif;
   }
   
   .container {
     width: 100%;
+    max-width: 1200px;
     margin: auto;
   }
   
@@ -20,40 +16,27 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     flex-wrap: wrap;
   }
   
   .logo img {
-    max-width: 180px;
+    max-width: 150px;
   }
   
   .search {
-    background-color: rgb(238, 238, 238);
-    border-radius: 20px;
-    width: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 10px;
+    background-color: #eee;
+    border-radius: 20px;
     padding: 5px 10px;
-    gap: 8px;
-    height: 40px;
   }
   
-  .search select {
-    background-color: rgb(235, 235, 235);
-    color: grey;
-    border: none;
-    font-size: 14px;
-    height: 30px;
-  }
-  
+  .search select,
   .search input {
-    background-color: rgb(238, 238, 238);
-    border: none;
-    width: 250px;
+    font-family: 'Rubik', sans-serif;
     font-size: 14px;
-    height: 28px;
   }
   
   .search img {
@@ -61,55 +44,62 @@ body {
     height: 20px;
   }
   
+  .support p,
+  .cart,
+  .profile {
+    font-family: 'Rubik', sans-serif;
+    color: #555;
+  }
+  
+  .shop-dept {
+    margin: 20px;
+  }
+  
   .belowheader {
     display: flex;
-    padding: 20px;
     gap: 20px;
-    flex-wrap: wrap;
+    padding: 20px;
   }
   
   .smoothie {
     position: relative;
-    width: 750px;
   }
   
   .smoothie img {
-    width: 100%;
+    width: 750px;
+    height: auto;
     border-radius: 10px;
   }
   
   .natural {
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 30px;
-    color: yellow;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: Georgia, serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #ffce00;
   }
   
   .smo {
     position: absolute;
-    top: 100px;
+    top: 90px;
     left: 30px;
-    font-size: 42px;
+    font-size: 28px;
     font-weight: bold;
-    color: black;
-    font-family: 'Poppins', sans-serif;
+    color: #222;
   }
   
   .sn {
     position: absolute;
-    top: 300px;
-    left: 50px;
-    width: 150px;
-    height: 50px;
-    background-color: rgb(255, 255, 44);
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 10px;
+    top: 200px;
+    left: 30px;
+    background-color: #ffce00;
+    color: #000;
     border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 8px;
     cursor: pointer;
   }
   
@@ -119,64 +109,49 @@ body {
     gap: 20px;
   }
   
-  .veggies,
-  .baked {
+  .veggies, .baked {
     position: relative;
-    width: 450px;
   }
   
-  .veggies img,
-  .baked img {
-    width: 100%;
+  .veggies img, .baked img {
+    width: 450px;
+    height: 200px;
     border-radius: 10px;
   }
   
-  .perc,
-  .perc2 {
+  .perc, .perc2 {
     position: absolute;
     top: 10px;
-    left: 30px;
-    color: black;
+    left: 20px;
+    font-family: 'Playfair Display', serif;
     font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+    color: #000;
   }
   
-  .sale,
-  .sale2 {
+  .sale, .sale2 {
     position: absolute;
-    top: 45px;
-    left: 30px;
-    color: black;
-    font-size: 20px;
-    font-family: Georgia, serif;
+    top: 40px;
+    left: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: #444;
   }
   
-  .fav,
-  .fav2 {
+  .fav, .fav2 {
     position: absolute;
     top: 70px;
-    left: 30px;
-    font-size: 30px;
+    left: 20px;
+    font-size: 24px;
     font-weight: bold;
+    color: green;
+    font-family: 'Rubik', sans-serif;
   }
   
-  .fav {
-    color: darkgreen;
-  }
-  
-  .fav2 {
-    color: sienna;
-  }
-  
-  .sc,
-  .sc2 {
+  .sc, .sc2 {
     position: absolute;
-    top: 170px;
-    left: 30px;
-    color: black;
-    font-size: 18px;
-    font-family: Georgia, serif;
-    text-decoration: underline;
-    cursor: pointer;
+    top: 130px;
+    left: 20px;
+    font-size: 16px;
+    color: #222;
   }
   
