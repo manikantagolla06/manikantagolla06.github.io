@@ -1,63 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Create a new account</title>
+  <link rel="stylesheet" href="script.css">
 </head>
 <body>
-  <h1>facebook</h1>
-  <h2>Create a new account</h2>
-  <p>It's quick and easy.</p>
+  <div class="container">
+    <h1 class="logo">facebook</h1>
+    <div class="form-box">
+      <h2>Create a new account</h2>
+      <p>It's quick and easy.</p>
+      <form>
+        <div class="name-row">
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Surname" required>
+        </div>
 
-  <form>
-    <table>
-      <tr>
-        <td><input type="text" placeholder="First name" required></td>
-        <td><input type="text" placeholder="Surname" required></td>
-      </tr>
-    </table>
+        <label>Date of birth</label>
+        <div class="dob-row">
+          <select id="day"></select>
+          <select id="month"></select>
+          <select id="year"></select>
+        </div>
 
-    <p>Date of birth</p>
-    <select name="day">
-      <!-- Days 1–31 -->
-      <?php for ($d = 1; $d <= 31; $d++) echo "<option>$d</option>"; ?>
-    </select>
+        <label>Gender</label>
+        <div class="gender-row">
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Custom"> Custom</label>
+        </div>
 
-    <select name="month">
-      <!-- Months January–December -->
-      <option>January</option>
-      <option>February</option>
-      <option>March</option>
-      <option>April</option>
-      <option>May</option>
-      <option>June</option>
-      <option>July</option>
-      <option>August</option>
-      <option>September</option>
-      <option>October</option>
-      <option>November</option>
-      <option>December</option>
-    </select>
+        <input type="text" placeholder="Mobile number or email address" required>
+        <input type="password" placeholder="New password" required>
 
-    <select name="year">
-      <!-- Years 1905–2025 -->
-      <?php for ($y = 2025; $y >= 1905; $y--) echo "<option>$y</option>"; ?>
-    </select>
-
-    <p>Gender</p>
-    <input type="radio" name="gender" value="female" id="female">
-    <label for="female">Female</label>
-    <input type="radio" name="gender" value="male" id="male">
-    <label for="male">Male</label>
-    <input type="radio" name="gender" value="custom" id="custom">
-    <label for="custom">Custom</label>
-
-    <br><br>
-    <input type="text" placeholder="Mobile number or email address" required><br><br>
-    <input type="password" placeholder="New password" required><br><br>
-
-    <button type="submit">Sign Up</button>
-  </form>
-
-  <p><a href="#">Already have an account?</a></p>
+        <button type="submit" class="signup-btn">Sign Up</button>
+      </form>
+      <a href="#">Already have an account?</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
