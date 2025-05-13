@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    gap: 40px;
+  }
+  
+  .input-section {
+    flex: 1;
+  }
+  
+  .result-section {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+  }
+  
+  input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .result-section p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  

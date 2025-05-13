@@ -8,17 +8,19 @@
 </head>
 <body>
   <div class="container">
-    <h2>Simple Calculator</h2>
-    
-    <label for="num1">Number 1:</label>
-    <input type="number" id="num1" placeholder="Enter a number" required>
-    
-    <label for="num2">Number 2:</label>
-    <input type="number" id="num2" placeholder="Enter a number" required>
-    
-    <button onclick="calculate()">Calculate</button>
+    <div class="input-section">
+      <h2>Simple Calculator</h2>
+      
+      <label for="num1">Number 1:</label>
+      <input type="number" id="num1" placeholder="Enter a number">
 
-    <div class="result">
+      <label for="num2">Number 2:</label>
+      <input type="number" id="num2" placeholder="Enter a number">
+
+      <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <div class="result-section">
       <p id="addition">Addition: </p>
       <p id="subtraction">Subtraction: </p>
       <p id="multiplication">Multiplication: </p>
