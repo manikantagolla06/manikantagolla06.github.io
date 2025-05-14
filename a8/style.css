@@ -38,4 +38,9 @@ body {
     font-size: 20px;
     font-weight: bold;
   }
+  .separator {
+    margin: 20px 0;
+    border: none;
+    border-top: 2px solid #ccc;
+  }
   
