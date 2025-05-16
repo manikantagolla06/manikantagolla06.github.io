@@ -4,10 +4,7 @@ let fruits = [
   { id: 3, name: "Mango", price: 80 },
 ];
 
-let totalPrice = fruits.reduce((sum, fruit) => sum + fruit.price, 0);
-
-fruits.push({ id: 4, name: "Total", price: totalPrice });
-
 fruits.forEach((element) => {
-  console.log(element.price);
+    element.price+=5;
+  console.log(element.name+" "+element.price);
 });
