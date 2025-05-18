@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products</title>
+  <style>
+    .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .row div {
+      background-color: rgba(0, 68, 255, 0.63);
+      margin: 10px;
+      padding: 10px;
+      width: 200px;
+      color: white;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    button {
+      margin: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    h2, h3 {
+      margin: 5px 0;
+    }
+    #cart {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body onload="dispProducts()">
+  <h1>Product Catalog</h1>
+  <p>
+    <input type="number" id="txtId" placeholder="ID" />
+    <input type="text" id="txtName" placeholder="Name" />
+    <input type="number" id="txtPrice" placeholder="Price" />
+    <input type="text" id="txtUrl" placeholder="Image URL" />
+    <button onclick="addProduct()">Add</button>
+  </p>
+
+  <div id="container" class="row"></div>
+
+  
+  <ul id="cartList"></ul>
+
+  <script>
+    let products = [
+      { id: 1, name: "Apple", price: 250, imgUrl: "https://picsum.photos/id/11/200/200" },
+      { id: 2, name: "Orange", price: 100, imgUrl: "https://picsum.photos/id/12/200/200" },
+      { id: 3, name: "Mango", price: 80, imgUrl: "https://picsum.photos/id/13/200/200" },
+    ];
+
+    let cart = [];
+
+    const addProduct = () => {
+      let id = parseInt(document.querySelector("#txtId").value);
+      let name = document.querySelector("#txtName").value;
+      let price = parseFloat(document.querySelector("#txtPrice").value);
+      let imgUrl = document.querySelector("#txtUrl").value;
+
+      const obj = { id, name, price, imgUrl };
+      products.push(obj);
+      dispProducts();
+
+      // Clear inputs
+      document.querySelector("#txtId").value = "";
+      document.querySelector("#txtName").value = "";
+      document.querySelector("#txtPrice").value = "";
+      document.querySelector("#txtUrl").value = "";
+    };
+
+    const deleteProduct = (id) => {
+      products = products.filter((product) => product.id !== id);
+      dispProducts();
+    };
+
+    const addToCart = (productId) => {
+      const product = products.find((p) => p.id === productId);
+      if (product) {
+        cart.push(product);
+        displayCart();
+      }
+    };
+
+    const displayCart = () => {
+      let str = "";
+      cart.forEach((item, index) => {
+        str += `<li>${item.name} - ₹${item.price}</li>`;
+      });
+      document.getElementById("cartList").innerHTML = str;
+    };
+
+    const dispProducts = () => {
+      let str = "";
+      products.map((value) => {
+        str += `<div>
+                  <img src="${value.imgUrl}" />
+                  <h2>${value.name}</h2>
+                  <h3>&#8377;${value.price}</h3>
+                  <button onclick="addToCart(${value.id})">Add to Cart</button>
+                  <button onclick="deleteProduct(${value.id})">Delete</button>
+                </div>`;
+      });
+      document.getElementById("container").innerHTML = str;
+    };
+  </script>
+</body>
+</html>
