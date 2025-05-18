@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            border:1px solid black;
+            padding:10px;
+            width: 80px;
+            background-color: white;
+            text-align:center;
+            border-radius:5px;
+        }
+        #root
+        {
+            display: flex;
+            gap: 20px;
+            margin: 30px;
+            flex-wrap: wrap;
+        }
+        button
+        {
+            margin-top: 8px;
+            padding: 5px 10px;
+            cursor:pointer;
+            border-radius: 3px;
+            border: 1px solid #333;
+            background-color: #eee;
+        }
+        button:hover {
+        background-color: #ccc;
+        }
+    </style>
+</head>
+<body onload="showpro()">
+    <header>
+        <h1>My Store</h1>
+        <ul>
+            <li>Home</li>
+            <li>Cart</li>
+        </ul>
+    </header>
+    <main>
+        <div id="root"></div>
+    </main>
+    <footer>
+        &copy;2025 All rights reserved.
+    </footer>
+
+
+
+    <script>
+    const products=[
+    {id:1,name:"p1",price:35},
+    {id:2,name:"p2",price:35},
+    {id:3,name:"p3",price:35},
+];
+    function showpro()
+    {
+        let x="";
+        for(let i=0;i<products.length;i++)
+        {
+            let pro=products[i];
+            x+=` <div class="box"><h2> ${pro.id}</h2> <h2> ${pro.name}</h2> <h2> ${pro.price}</h2> <button onClick="add(${pro.id})"> Add</button>  </div>`;
+        }
+        document.getElementById("root").innerHTML=x;
+    }
+    </script>
+</body>
+</html>
