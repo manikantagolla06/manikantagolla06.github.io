@@ -7,7 +7,7 @@ function Submit() {
   const pin = document.getElementById('pin').value;
 
 
-  if (number === "1234567890" && pin === "6969") {
+  if (number === "1234567890" && pin === "1234") {
     document.getElementById('message').textContent = "Welcome Manikanta!";
   } else {
     document.getElementById('message').textContent = "Invalid number or pin.";
