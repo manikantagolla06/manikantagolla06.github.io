@@ -14,25 +14,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Login Screen</title>
-  <h1>Bank ATM</h1>
-  <link rel="stylesheet" href="s.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bank ATM</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="scr" id="screen1">
-
-      <input type="text" id="number" placeholder="Enter Number">
-      <input type="password" id="pin" placeholder="Enter PIN">
-      <button onclick="Submit()">Submit</button>
-    </div>
-    <div class="scr" id="screen2">
-      
-      <div id="message"></div>
-    </div>
+  <div class="atm-box">
+    <h1>Bank ATM</h1>
+    <hr />
+    <input type="text" id="cardNumber" placeholder="Enter Card Number" />
+    <input type="password" id="pin" placeholder="Enter PIN" />
+    <button onclick="login()">Submit</button>
+    <p id="errorMsg"></p>
   </div>
 
-  <script src="s.js"></script>
+  <div id="welcomeBox" class="welcome-box" style="display:none;">
+    <h2>Welcome, <span id="userName"></span>!</h2>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
