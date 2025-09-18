@@ -62,7 +62,7 @@ header a{
 }
 
 .btn-signup{
-    background-color: rgb(255, 119, 0);
+    background-color: #ff7034;
     margin-top: 10px;
     padding:7px;
     font-size: 20px;
@@ -88,7 +88,7 @@ body {
 }
 
 .projects-section {
-    background-color: #e64736; 
+    background-color: #34c3ff; 
     padding: 40px 20px;
     text-align: center;
 }
