@@ -56,7 +56,7 @@ header a{
 }
 
 .box {
-     width: 200px;       
+    width: 100px;       
   padding: 10px;      
   border-radius: 50%;
 }
