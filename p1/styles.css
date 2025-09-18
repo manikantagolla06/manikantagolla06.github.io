@@ -56,9 +56,9 @@ header a{
 }
 
 .box {
-    width: 100px;       
-  padding: 10px;      
-  border-radius: 50%;
+    width: 500px;
+    padding: 30px;
+    transition: transform .5s;
 }
 
 .btn-signup{
@@ -76,7 +76,7 @@ header a{
 }
 
 .image {
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .title {
